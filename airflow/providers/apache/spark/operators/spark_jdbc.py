@@ -197,7 +197,7 @@ class SparkJDBCOperator(SparkSubmitOperator):
     def _get_hook(self) -> SparkJDBCHook:
         return SparkJDBCHook(
             spark_app_name=self._spark_app_name,
-            spark_conn_id=self._spark_conn_id,
+            conn_id=self._spark_conn_id,
             spark_conf=self._spark_conf,
             spark_py_files=self._spark_py_files,
             spark_files=self._spark_files,
